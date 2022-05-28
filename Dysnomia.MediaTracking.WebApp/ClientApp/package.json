@@ -30,6 +30,9 @@
     "workbox-streams": "^6.5.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/eslint-parser": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
     "ajv": "^8.11.0",
     "cross-env": "^7.0.3",
     "eslint": "^8.16.0",
