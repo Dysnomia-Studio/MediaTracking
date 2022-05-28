@@ -1,13 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { MemoryRouter } from 'react-router-dom';
 import App from './App';
 
 it('renders without crashing', async () => {
-	const div = document.createElement('div');
-	ReactDOM.render(
+	const rootElement = document.createElement('div');
+	const root = createRoot(rootElement);
+	root.render(
 		<MemoryRouter>
 			<App />
-		</MemoryRouter>, div);
+		</MemoryRouter>
+	);
 	await new Promise(resolve => setTimeout(resolve, 1000));
 });
